@@ -19,5 +19,7 @@ wordc = wordcloud.WordCloud(
         background_color='white',
         # mask=msk,
         contour_color='steelblue',
+        width=800,
+        height=600,
         contour_width=2).generate(splitted)
 wordc.to_file('summary-202004.png')
